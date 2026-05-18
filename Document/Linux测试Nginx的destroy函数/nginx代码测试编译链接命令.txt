@@ -1,0 +1,4 @@
+gcc -c -g -I src/core -I src/event -I src/event/modules -I src/os/unix -I objs -I src/http -I src/http/modules -o ngx_testpool.o  ngx_testpool.c
+
+
+gcc -o ngx_testpool ngx_testpool.o objs/src/core/ngx_palloc.o objs/src/os/unix/ngx_alloc.o
